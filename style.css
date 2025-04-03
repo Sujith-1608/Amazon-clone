@@ -1,0 +1,399 @@
+*{
+    margin:0;
+    font-family: Arial;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    min-width: max-content;
+
+}
+
+.navbar {
+    background-color: #0f1111;
+    height: 60px;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    justify-content: space-between;
+    
+}
+
+/* Navigation Logo */
+.nav-logo{
+    height:50px;
+    width:100px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.logo{
+    background-image: url(images/Amazonlogo.jpg);
+    background-size: cover;
+    height:50px;
+    width:100%;
+   
+}
+
+.border{
+    border: 1.5px solid transparent;
+}
+
+.border:hover{
+    border: 1.5px solid white;
+}
+
+
+ /* Address */
+
+.add-first{
+    color: #cccccc;
+    font-size: 0.75rem;
+    margin-left:12px;
+
+}
+
+.add-icon{
+    display: flex;
+    gap:2px;
+}
+
+.add-second{
+    font-size: 1rem;
+}
+
+/* Search Bar */
+.nav-search{
+    display: flex;
+    gap:0;
+    border: 2px solid transparent;
+}
+
+.nav-search select, 
+.nav-search input,
+.nav-search i{
+    height:35px;
+    border: none;
+}
+
+.nav-search select{
+    background-color: #CCCCCC;
+    border: 2px solid transparent;
+    outline: none;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    width:45px;
+}
+
+.nav-search option{
+    background-color: white;
+    color: black;
+}
+.nav-search input{
+    outline: none;
+    width:420px;
+}
+
+.nav-search i{
+    width:40px;
+    font-size: 25px;
+    padding: 4px 0 0 5px;
+    background-color: orange;
+    color: black;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius:3px;
+}
+
+.nav-search select:focus {
+    border: 1px solid orange;
+}
+
+.nav-search:focus-within {
+    border: 2px solid orange;
+    border-radius: 5px;
+}
+
+/* Language */
+
+.nav-lang{
+    display:flex;
+    align-items: center;
+    gap:2px;
+    height:30px;
+}
+
+.nav-lang img{
+    height:20px;
+    background-size: cover;
+}
+
+.nav-lang select{
+    border:none;
+    outline:none;
+    background-color: transparent;
+    color: white;
+    width:45px;
+}
+
+.nav-lang option{
+    background-color: white;
+    color: black;
+}
+
+/* Accounts & Lists */
+span{
+    font-size:0.7rem;
+}
+
+.Lists{
+    display: flex;
+}
+
+.nav-second{
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+.Lists select{
+    color:white;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+
+.nav-cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:2px;
+}
+
+.nav-cart i{
+    color: orange;
+    font-size: 25px;
+}
+
+.nav-cart p{
+    margin-left:2px;
+    margin-top:10px;
+}
+
+/* Second nav-bar */
+.navbar-second {
+    background-color: #201344;
+    color: white;
+    display: flex;
+    align-items: center;
+    height: 40px;
+
+}
+
+.navbar-second a{
+    text-decoration: none;
+    color: white;
+    gap:10px;
+}
+
+.nav-all{
+    display: flex;
+    gap:10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    justify-content: space-between;
+}
+
+.nav-a{
+    display:flex;
+    gap:30px;
+}
+
+
+.electronic-deals {
+    margin-left: auto;
+}
+
+.electronic-deals a {
+    font-weight: bold;
+    position: relative;
+    right: 50px;
+}
+
+
+.slide-container {
+    background-color: pink;
+    height: 500px;
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+
+.slide-container img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}
+
+.slide-btn{
+    background-color: rgba(0, 0, 0, 0.6);
+    height:60px;
+    width:60px;
+    border-radius: 50%;
+    border:transparent;
+    font-size:30px;
+    top:50%;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.slide-left-btn{
+    position: absolute;
+    left:40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.slide-right-btn{
+    position: absolute;
+    right:40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top:50%; 
+}
+
+.slide-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.all-items{
+    width:100%;
+    margin-top:-150px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.items{
+    width: 290px;
+    height: 400px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding:15px;
+    overflow: hidden;
+
+}
+.items h2{
+    padding-left: 10px;
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+}
+.items p{
+    font-size: 13px;
+    font-weight: 100;
+    text-align:center;
+    margin:5px 0;
+    display: block;
+    width: 120px; 
+}
+.items a{
+    text-decoration: none;
+    font-size: 13px;
+    color: rgba(16, 16, 236, 0.993);
+    margin-left: 20px;
+    position: relative;
+    margin-top: 10px;
+}
+
+.items img{
+    height:100px;
+    width:120px;
+    display: block;
+    margin: 0 auto;
+}
+
+.box-items{
+    position: relative;
+    left: 5px;
+    display: flex; 
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.row-2{
+    margin-top: 25px;
+}
+
+.personalization {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 20px;
+    width: 100%;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.personalization button{
+    margin-top:10px;
+    height: 30px;
+    width:80px;
+    background-color: orange;
+    border:none;
+    border-radius: 3px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.personalization div{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    gap:5px;
+}
+
+.personalization p, a{
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.return{
+    background-color: #242f36;
+    margin-top:10px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.return a{
+    color: white;
+    text-decoration: none;
+}
+
+.footer{
+    padding: 20px;
+    background-color: rgb(0, 0, 53);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer p{
+    font-size: 14px;
+}
